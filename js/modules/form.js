@@ -51,7 +51,7 @@ imgInputNode.addEventListener('change', () => {
 
   const matches = FILE_FORMATS.some((it) => fileName.endsWith(it));
 
-  if (!matches) {
+  if (matches) {
     displayImage(file);
   }
 });
